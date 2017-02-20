@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A747E50806113503D955617 /* Pods_remoteDrawingSocketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847AC82B61D3A6FA9F23264 /* Pods_remoteDrawingSocketTests.framework */; };
+		5852508A89D4339FE77E16B6 /* Pods_remoteDrawingSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F7AF8EF2D2E7434FFC73CE /* Pods_remoteDrawingSocket.framework */; };
+		929DBFB01E5B7E9300E0705E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFAF1E5B7E9300E0705E /* AppDelegate.swift */; };
+		929DBFB21E5B7E9300E0705E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFB11E5B7E9300E0705E /* ViewController.swift */; };
+		929DBFB51E5B7E9300E0705E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929DBFB31E5B7E9300E0705E /* Main.storyboard */; };
+		929DBFB81E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFB61E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodeld */; };
+		929DBFBA1E5B7E9300E0705E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929DBFB91E5B7E9300E0705E /* Assets.xcassets */; };
+		929DBFBD1E5B7E9300E0705E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929DBFBB1E5B7E9300E0705E /* LaunchScreen.storyboard */; };
+		929DBFC81E5B7E9300E0705E /* remoteDrawingSocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFC71E5B7E9300E0705E /* remoteDrawingSocketTests.swift */; };
+		929DBFD31E5B7E9300E0705E /* remoteDrawingSocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFD21E5B7E9300E0705E /* remoteDrawingSocketUITests.swift */; };
+		929DBFE11E5B85FB00E0705E /* SocketConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFE01E5B85FB00E0705E /* SocketConnect.swift */; };
+		929DBFE31E5B87D100E0705E /* SocketDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFE21E5B87D100E0705E /* SocketDrawing.swift */; };
+		929DBFE51E5B9EFF00E0705E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DBFE41E5B9EFF00E0705E /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		929DBFC41E5B7E9300E0705E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929DBFA41E5B7E9200E0705E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929DBFAB1E5B7E9200E0705E;
+			remoteInfo = remoteDrawingSocket;
+		};
+		929DBFCF1E5B7E9300E0705E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929DBFA41E5B7E9200E0705E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929DBFAB1E5B7E9200E0705E;
+			remoteInfo = remoteDrawingSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0847AC82B61D3A6FA9F23264 /* Pods_remoteDrawingSocketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remoteDrawingSocketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E312876B6642E112C310C35 /* Pods-remoteDrawingSocketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remoteDrawingSocketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remoteDrawingSocketTests/Pods-remoteDrawingSocketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6899F00C6373F63F60CEC2F5 /* Pods-remoteDrawingSocketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remoteDrawingSocketTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-remoteDrawingSocketTests/Pods-remoteDrawingSocketTests.release.xcconfig"; sourceTree = "<group>"; };
+		890746327F281023C7ABB563 /* Pods-remoteDrawingSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remoteDrawingSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remoteDrawingSocket/Pods-remoteDrawingSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		929DBFAC1E5B7E9300E0705E /* remoteDrawingSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteDrawingSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		929DBFAF1E5B7E9300E0705E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		929DBFB11E5B7E9300E0705E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		929DBFB41E5B7E9300E0705E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		929DBFB71E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = remoteDrawingSocket.xcdatamodel; sourceTree = "<group>"; };
+		929DBFB91E5B7E9300E0705E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		929DBFBC1E5B7E9300E0705E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		929DBFBE1E5B7E9300E0705E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929DBFC31E5B7E9300E0705E /* remoteDrawingSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = remoteDrawingSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929DBFC71E5B7E9300E0705E /* remoteDrawingSocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remoteDrawingSocketTests.swift; sourceTree = "<group>"; };
+		929DBFC91E5B7E9300E0705E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929DBFCE1E5B7E9300E0705E /* remoteDrawingSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = remoteDrawingSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929DBFD21E5B7E9300E0705E /* remoteDrawingSocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remoteDrawingSocketUITests.swift; sourceTree = "<group>"; };
+		929DBFD41E5B7E9300E0705E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929DBFE01E5B85FB00E0705E /* SocketConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConnect.swift; sourceTree = "<group>"; };
+		929DBFE21E5B87D100E0705E /* SocketDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketDrawing.swift; sourceTree = "<group>"; };
+		929DBFE41E5B9EFF00E0705E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C3F7AF8EF2D2E7434FFC73CE /* Pods_remoteDrawingSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remoteDrawingSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF37E1F90DA9CF44886FEA83 /* Pods-remoteDrawingSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remoteDrawingSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-remoteDrawingSocket/Pods-remoteDrawingSocket.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		929DBFA91E5B7E9200E0705E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5852508A89D4339FE77E16B6 /* Pods_remoteDrawingSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929DBFC01E5B7E9300E0705E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A747E50806113503D955617 /* Pods_remoteDrawingSocketTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929DBFCB1E5B7E9300E0705E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		929DBFA31E5B7E9200E0705E = {
+			isa = PBXGroup;
+			children = (
+				929DBFAE1E5B7E9300E0705E /* remoteDrawingSocket */,
+				929DBFC61E5B7E9300E0705E /* remoteDrawingSocketTests */,
+				929DBFD11E5B7E9300E0705E /* remoteDrawingSocketUITests */,
+				929DBFAD1E5B7E9300E0705E /* Products */,
+				B5E4326DA3EBEC67A0B37972 /* Pods */,
+				BA0ED3EFF21169B23C966A5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		929DBFAD1E5B7E9300E0705E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				929DBFAC1E5B7E9300E0705E /* remoteDrawingSocket.app */,
+				929DBFC31E5B7E9300E0705E /* remoteDrawingSocketTests.xctest */,
+				929DBFCE1E5B7E9300E0705E /* remoteDrawingSocketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		929DBFAE1E5B7E9300E0705E /* remoteDrawingSocket */ = {
+			isa = PBXGroup;
+			children = (
+				929DBFAF1E5B7E9300E0705E /* AppDelegate.swift */,
+				929DBFB11E5B7E9300E0705E /* ViewController.swift */,
+				929DBFB31E5B7E9300E0705E /* Main.storyboard */,
+				929DBFB91E5B7E9300E0705E /* Assets.xcassets */,
+				929DBFBB1E5B7E9300E0705E /* LaunchScreen.storyboard */,
+				929DBFBE1E5B7E9300E0705E /* Info.plist */,
+				929DBFB61E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodeld */,
+				929DBFE01E5B85FB00E0705E /* SocketConnect.swift */,
+				929DBFE21E5B87D100E0705E /* SocketDrawing.swift */,
+				929DBFE41E5B9EFF00E0705E /* Extensions.swift */,
+			);
+			path = remoteDrawingSocket;
+			sourceTree = "<group>";
+		};
+		929DBFC61E5B7E9300E0705E /* remoteDrawingSocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				929DBFC71E5B7E9300E0705E /* remoteDrawingSocketTests.swift */,
+				929DBFC91E5B7E9300E0705E /* Info.plist */,
+			);
+			path = remoteDrawingSocketTests;
+			sourceTree = "<group>";
+		};
+		929DBFD11E5B7E9300E0705E /* remoteDrawingSocketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				929DBFD21E5B7E9300E0705E /* remoteDrawingSocketUITests.swift */,
+				929DBFD41E5B7E9300E0705E /* Info.plist */,
+			);
+			path = remoteDrawingSocketUITests;
+			sourceTree = "<group>";
+		};
+		B5E4326DA3EBEC67A0B37972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				890746327F281023C7ABB563 /* Pods-remoteDrawingSocket.debug.xcconfig */,
+				CF37E1F90DA9CF44886FEA83 /* Pods-remoteDrawingSocket.release.xcconfig */,
+				0E312876B6642E112C310C35 /* Pods-remoteDrawingSocketTests.debug.xcconfig */,
+				6899F00C6373F63F60CEC2F5 /* Pods-remoteDrawingSocketTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA0ED3EFF21169B23C966A5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F7AF8EF2D2E7434FFC73CE /* Pods_remoteDrawingSocket.framework */,
+				0847AC82B61D3A6FA9F23264 /* Pods_remoteDrawingSocketTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		929DBFAB1E5B7E9200E0705E /* remoteDrawingSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929DBFD71E5B7E9300E0705E /* Build configuration list for PBXNativeTarget "remoteDrawingSocket" */;
+			buildPhases = (
+				28AE8B86C7FD5C966B765488 /* [CP] Check Pods Manifest.lock */,
+				929DBFA81E5B7E9200E0705E /* Sources */,
+				929DBFA91E5B7E9200E0705E /* Frameworks */,
+				929DBFAA1E5B7E9200E0705E /* Resources */,
+				451F8BB95AAF000F1EFB095E /* [CP] Embed Pods Frameworks */,
+				76E2A6CF160504DCB2044F94 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = remoteDrawingSocket;
+			productName = remoteDrawingSocket;
+			productReference = 929DBFAC1E5B7E9300E0705E /* remoteDrawingSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		929DBFC21E5B7E9300E0705E /* remoteDrawingSocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929DBFDA1E5B7E9300E0705E /* Build configuration list for PBXNativeTarget "remoteDrawingSocketTests" */;
+			buildPhases = (
+				05CAE52385C08793EEC2F7EA /* [CP] Check Pods Manifest.lock */,
+				929DBFBF1E5B7E9300E0705E /* Sources */,
+				929DBFC01E5B7E9300E0705E /* Frameworks */,
+				929DBFC11E5B7E9300E0705E /* Resources */,
+				EC2D930431379B0125F30953 /* [CP] Embed Pods Frameworks */,
+				AE42204816BEE26DA43E8218 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929DBFC51E5B7E9300E0705E /* PBXTargetDependency */,
+			);
+			name = remoteDrawingSocketTests;
+			productName = remoteDrawingSocketTests;
+			productReference = 929DBFC31E5B7E9300E0705E /* remoteDrawingSocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		929DBFCD1E5B7E9300E0705E /* remoteDrawingSocketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929DBFDD1E5B7E9300E0705E /* Build configuration list for PBXNativeTarget "remoteDrawingSocketUITests" */;
+			buildPhases = (
+				929DBFCA1E5B7E9300E0705E /* Sources */,
+				929DBFCB1E5B7E9300E0705E /* Frameworks */,
+				929DBFCC1E5B7E9300E0705E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929DBFD01E5B7E9300E0705E /* PBXTargetDependency */,
+			);
+			name = remoteDrawingSocketUITests;
+			productName = remoteDrawingSocketUITests;
+			productReference = 929DBFCE1E5B7E9300E0705E /* remoteDrawingSocketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		929DBFA41E5B7E9200E0705E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Anthony;
+				TargetAttributes = {
+					929DBFAB1E5B7E9200E0705E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2KSK6YV8G7;
+						ProvisioningStyle = Automatic;
+					};
+					929DBFC21E5B7E9300E0705E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2KSK6YV8G7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 929DBFAB1E5B7E9200E0705E;
+					};
+					929DBFCD1E5B7E9300E0705E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2KSK6YV8G7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 929DBFAB1E5B7E9200E0705E;
+					};
+				};
+			};
+			buildConfigurationList = 929DBFA71E5B7E9200E0705E /* Build configuration list for PBXProject "remoteDrawingSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 929DBFA31E5B7E9200E0705E;
+			productRefGroup = 929DBFAD1E5B7E9300E0705E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				929DBFAB1E5B7E9200E0705E /* remoteDrawingSocket */,
+				929DBFC21E5B7E9300E0705E /* remoteDrawingSocketTests */,
+				929DBFCD1E5B7E9300E0705E /* remoteDrawingSocketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		929DBFAA1E5B7E9200E0705E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929DBFBD1E5B7E9300E0705E /* LaunchScreen.storyboard in Resources */,
+				929DBFBA1E5B7E9300E0705E /* Assets.xcassets in Resources */,
+				929DBFB51E5B7E9300E0705E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929DBFC11E5B7E9300E0705E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929DBFCC1E5B7E9300E0705E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05CAE52385C08793EEC2F7EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28AE8B86C7FD5C966B765488 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		451F8BB95AAF000F1EFB095E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remoteDrawingSocket/Pods-remoteDrawingSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76E2A6CF160504DCB2044F94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remoteDrawingSocket/Pods-remoteDrawingSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE42204816BEE26DA43E8218 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remoteDrawingSocketTests/Pods-remoteDrawingSocketTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC2D930431379B0125F30953 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remoteDrawingSocketTests/Pods-remoteDrawingSocketTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929DBFA81E5B7E9200E0705E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929DBFB21E5B7E9300E0705E /* ViewController.swift in Sources */,
+				929DBFE51E5B9EFF00E0705E /* Extensions.swift in Sources */,
+				929DBFE11E5B85FB00E0705E /* SocketConnect.swift in Sources */,
+				929DBFE31E5B87D100E0705E /* SocketDrawing.swift in Sources */,
+				929DBFB81E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodeld in Sources */,
+				929DBFB01E5B7E9300E0705E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929DBFBF1E5B7E9300E0705E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929DBFC81E5B7E9300E0705E /* remoteDrawingSocketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929DBFCA1E5B7E9300E0705E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929DBFD31E5B7E9300E0705E /* remoteDrawingSocketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		929DBFC51E5B7E9300E0705E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929DBFAB1E5B7E9200E0705E /* remoteDrawingSocket */;
+			targetProxy = 929DBFC41E5B7E9300E0705E /* PBXContainerItemProxy */;
+		};
+		929DBFD01E5B7E9300E0705E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929DBFAB1E5B7E9200E0705E /* remoteDrawingSocket */;
+			targetProxy = 929DBFCF1E5B7E9300E0705E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		929DBFB31E5B7E9300E0705E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929DBFB41E5B7E9300E0705E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		929DBFBB1E5B7E9300E0705E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929DBFBC1E5B7E9300E0705E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		929DBFD51E5B7E9300E0705E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		929DBFD61E5B7E9300E0705E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		929DBFD81E5B7E9300E0705E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 890746327F281023C7ABB563 /* Pods-remoteDrawingSocket.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
+				INFOPLIST_FILE = remoteDrawingSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.remoteDrawingSocket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		929DBFD91E5B7E9300E0705E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF37E1F90DA9CF44886FEA83 /* Pods-remoteDrawingSocket.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
+				INFOPLIST_FILE = remoteDrawingSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.remoteDrawingSocket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		929DBFDB1E5B7E9300E0705E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E312876B6642E112C310C35 /* Pods-remoteDrawingSocketTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
+				INFOPLIST_FILE = remoteDrawingSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.remoteDrawingSocketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remoteDrawingSocket.app/remoteDrawingSocket";
+			};
+			name = Debug;
+		};
+		929DBFDC1E5B7E9300E0705E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6899F00C6373F63F60CEC2F5 /* Pods-remoteDrawingSocketTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
+				INFOPLIST_FILE = remoteDrawingSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.remoteDrawingSocketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remoteDrawingSocket.app/remoteDrawingSocket";
+			};
+			name = Release;
+		};
+		929DBFDE1E5B7E9300E0705E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
+				INFOPLIST_FILE = remoteDrawingSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.remoteDrawingSocketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = remoteDrawingSocket;
+			};
+			name = Debug;
+		};
+		929DBFDF1E5B7E9300E0705E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
+				INFOPLIST_FILE = remoteDrawingSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.remoteDrawingSocketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = remoteDrawingSocket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		929DBFA71E5B7E9200E0705E /* Build configuration list for PBXProject "remoteDrawingSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929DBFD51E5B7E9300E0705E /* Debug */,
+				929DBFD61E5B7E9300E0705E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929DBFD71E5B7E9300E0705E /* Build configuration list for PBXNativeTarget "remoteDrawingSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929DBFD81E5B7E9300E0705E /* Debug */,
+				929DBFD91E5B7E9300E0705E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929DBFDA1E5B7E9300E0705E /* Build configuration list for PBXNativeTarget "remoteDrawingSocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929DBFDB1E5B7E9300E0705E /* Debug */,
+				929DBFDC1E5B7E9300E0705E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929DBFDD1E5B7E9300E0705E /* Build configuration list for PBXNativeTarget "remoteDrawingSocketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929DBFDE1E5B7E9300E0705E /* Debug */,
+				929DBFDF1E5B7E9300E0705E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		929DBFB61E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				929DBFB71E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodel */,
+			);
+			currentVersion = 929DBFB71E5B7E9300E0705E /* remoteDrawingSocket.xcdatamodel */;
+			path = remoteDrawingSocket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 929DBFA41E5B7E9200E0705E /* Project object */;
+}

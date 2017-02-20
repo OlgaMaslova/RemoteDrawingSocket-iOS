@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="remoteDrawingSocket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H7L-TA-POy" userLabel="tempImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="usR-WV-0RK" userLabel="mainImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US8-qX-5kf">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szi-Ya-SdN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="US8-qX-5kf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1Sz-eN-frx"/>
+                            <constraint firstItem="usR-WV-0RK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Nr-bz-62y"/>
+                            <constraint firstItem="H7L-TA-POy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="9Zu-WP-b59"/>
+                            <constraint firstItem="usR-WV-0RK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Dfg-NX-2yE"/>
+                            <constraint firstItem="usR-WV-0RK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Ngr-fd-tx5"/>
+                            <constraint firstItem="US8-qX-5kf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="b9M-mW-MiR"/>
+                            <constraint firstItem="H7L-TA-POy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fO7-Ow-X1h"/>
+                            <constraint firstItem="H7L-TA-POy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gdN-pW-XRJ"/>
+                            <constraint firstItem="usR-WV-0RK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jzf-a9-6hV"/>
+                            <constraint firstItem="H7L-TA-POy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mRe-nH-Klw"/>
+                            <constraint firstItem="US8-qX-5kf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mSL-lO-SWe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="usR-WV-0RK" id="O6u-6E-chc"/>
+                        <outlet property="tempImageView" destination="H7L-TA-POy" id="Xf4-CZ-43a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
