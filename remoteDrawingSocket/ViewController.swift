@@ -23,12 +23,18 @@ class ViewController: UIViewController, SocketDrawingDelegate {
     var opacity: CGFloat = 1.0
     var swiped = false
     
+    enum user {
+        case me
+        case other
+    }
+    
     var socketDrawingConnection = SocketDrawing()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         socketDrawingConnection.delegate = self
+        socketDrawingConnection.login()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -75,7 +81,7 @@ class ViewController: UIViewController, SocketDrawingDelegate {
     }
     
 
-    func draw(fromPoint from: CGPoint, toPoint to:CGPoint) {
+    func draw(fromPoint from: CGPoint, toPoint to:CGPoint, who user:ViewController.user = .me) {
         
         UIGraphicsBeginImageContext(view.frame.size)
         
@@ -104,11 +110,15 @@ class ViewController: UIViewController, SocketDrawingDelegate {
         //Todo : send
         UIGraphicsEndImageContext()
         
+        if user == .me {
+            self.socketDrawingConnection.sendCoordinates(from: from, to: to)
+        }
+        
     }
     
     func isDrawing(from: CGPoint, to: CGPoint) {
         
-        self.draw(fromPoint: from, toPoint: to)
+        self.draw(fromPoint: from, toPoint: to, who: .other)
     }
     @IBAction func resetAction(_ sender: UIButton) {
         mainImageView.image = nil

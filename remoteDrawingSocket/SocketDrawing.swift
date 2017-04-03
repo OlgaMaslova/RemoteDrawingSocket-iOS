@@ -19,11 +19,40 @@ class SocketDrawing {
     
     public var delegate:NSObject?
     
+    
+    public struct Profil {
+        var id:String
+        var color:String
+    }
+    
+    public var me:Profil?
+    
     init() {
         self.addHandlers()
+        
+    }
+    
+    public func login(){
+        self.webSocket.emit(event: "login")
+    }
+    
+    public func sendCoordinates(from lastPoint:CGPoint, to toPoint:CGPoint){
+        
+        
+        let lastPointJson:JSON = ["x" : lastPoint.x,"y" : lastPoint.y ]
+        
+        let toPointJson:JSON = ["x" : toPoint.x, "y" : toPoint.y]
+        
+        var objectToSend:JSON = ["old" : lastPointJson, "new" : toPointJson]
+        
+        self.webSocket.emit(event: "drawing", data: [objectToSend.dictionaryObject] as [Any])
     }
     
     private func addHandlers(){
+        self.webSocket.addOn(event: "me") { data, ack in
+            let dataJSON = JSON(data[0])
+            self.me = Profil(id: dataJSON["id"].stringValue, color: dataJSON["color"].stringValue)
+        }
         
         self.webSocket.addOn(event: "receiveDrawing") { data, ack in
             guard let delegate = self.delegate as? SocketDrawingDelegate else {

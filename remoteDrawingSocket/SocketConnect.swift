@@ -22,10 +22,18 @@ class SocketConnect {
                 .forceNew(true),
                 .secure(false)]
         
-        self.socket = SocketIOClient(socketURL: URL(string: "http://192.168.1.12:3000")!, config: configurationDev)
+        self.socket = SocketIOClient(socketURL: URL(string: "http://localhost:3000")!, config: configurationDev)
         
         self.addHandlers()
         self.socket.connect()
+    }
+    
+    public func emit(event: String, data: [Any]? = nil){
+        if let dataToSend = data {
+            self.socket.emit(event, with: dataToSend)
+        }else{
+            self.socket.emit(event, with: [Any]())
+        }
     }
     
     public func addOn(event: String, callback: @escaping NormalCallback ) {
