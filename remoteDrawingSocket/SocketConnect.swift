@@ -19,13 +19,17 @@ class SocketConnect {
         
         let configurationDev:SocketIOClientConfiguration = [
                 .log(false),
-                .forceNew(true),
+                .forceNew(false),
                 .secure(false)]
         
-        self.socket = SocketIOClient(socketURL: URL(string: "http://localhost:3000")!, config: configurationDev)
+        self.socket = SocketIOClient(socketURL: URL(string: "http://192.168.1.96:3000")!, config: configurationDev)
         
         self.addHandlers()
         self.socket.connect()
+    }
+    
+    public func loginTest(){
+        self.socket.emit("login")
     }
     
     public func emit(event: String, data: [Any]? = nil){

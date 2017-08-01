@@ -25,3 +25,28 @@ extension UIColor {
         }
     }
 }
+
+
+extension UIColor {
+    /**
+     Hex string of a UIColor instance.
+     
+     - parameter includeAlpha: Whether the alpha should be included.
+     */
+    public func hexString(_ includeAlpha: Bool = true) -> String {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        if (includeAlpha) {
+            return String(format: "#%02X%02X%02X%02X", Int(r * 255), Int(g * 255), Int(b * 255), Int(a * 255))
+        } else {
+            return String(format: "#%02X%02X%02X", Int(r * 255), Int(g * 255), Int(b * 255))
+        }
+    }
+}
+
+
+

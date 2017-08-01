@@ -7,9 +7,11 @@ use_frameworks!
 target 'remoteDrawingSocket' do
     pod 'Socket.IO-Client-Swift'
     pod 'SwiftyJSON'
+    pod 'SwiftMessages'
 end
 
 target 'remoteDrawingSocketTests' do
     pod 'Socket.IO-Client-Swift'
     pod 'SwiftyJSON'
+    pod 'SwiftMessages'
 end
